@@ -26,7 +26,7 @@ export default function EmojiSticker({ imageSize, stickerSource }) {
                 <Animated.Image
                     source={stickerSource}
                     resizeMode="contain"
-                    style={{ width: imageSize, height: imageSize }}
+                    style={[imageStyle, { width: imageSize, height: imageSize }]}
                 />
             </GestureDetector>
         </View>
